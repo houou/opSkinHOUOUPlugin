@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+body
+    {
+     margin:0px;          /* ページ全体のmargin */
+     padding:0px;         /* ページ全体のpadding */
+     text-align:center;   /* 下記のautoに未対応用のセンタリング */
+    }
+
+#Body
+    {
+     margin-left:auto;    /* 左側マージンを自動的に空ける */
+     margin-right:auto;   /* 右側マージンを自動的に空ける */
+     text-align:left;     /* 中身を左側表示に戻す */
+    }
 
 
 /*==============================================================================
@@ -244,24 +257,41 @@ pre {
 #ContentsContainer,
 #FooterContainer {
   margin: 0 auto;
-  width: 950px;
 }
+#Header{
+  text-align:center;
+  width: 100%;
+}
+#HeaderContainer{
+  text-align:left;
+  margin: 0px auto;
+/*
+  width: 1080px;
+*/
+}
+
 
 #LayoutA,
 #LayoutB,
 #LayoutC {
   float: left;
-  width: 720px;
+/*  width: 800px; */
 }
 
 #LayoutA #Left {
+/*
   float: left;
-  width: 270px;
+  width: 266px;
+*/
+  min-height: 800px;
 }
 
 #LayoutA #Center {
+/*
   float: right;
-  width: 440px;
+  width: 529px;
+*/
+  min-height: 800px;
 }
 
 #LayoutA #Bottom {
@@ -296,8 +326,11 @@ pre {
 }
 
 #sideBanner {
+/*
   float: right;
   width: 225px;
+*/
+  min-height: 800px;
 }
 
 #Footer {
@@ -308,9 +341,7 @@ pre {
  * Header
  *--------------------------------------------*/
 #Header {
-/*
   background: #092f56 url(../images/bg_header.png) repeat-x scroll 0 0;
-*/
   overflow: hidden;
 }
 
@@ -342,7 +373,6 @@ pre {
  * Navigation
  *--------------------------------------------*/
 #globalNav {
-  padding-top: 40px;
   text-align: right;
   width: 850px;
   float: left;
@@ -385,15 +415,15 @@ pre {
 }
 
 #localNav {
-  margin-bottom: 10px;
-  margin-top: 10px;
+  background: #092f56 url(../images/bg_header.png) repeat-x scroll 0 0;
+  overflow: hidden;
+  margin-bottom: 5px;
+  margin-top: 0px;
 }
 
 #localNav ul{
-  padding-left: 100px;
 }
 #localNav ul {
-  background: transparent url(../images/bg_localnav_default.png) repeat-y 0 0;
   color: #FFFFFF;
 }
 
@@ -496,7 +526,9 @@ div.partsHeading {
   height: 30px;
   background: transparent url(../images/bg_parts_heading_720.png) no-repeat 0 0;
   line-height: 26px;
-  color: #FFFFFF;
+/*
+  color: #FFFFFF ;
+*/
   font-size: 100%;
   text-align: left;
 }
@@ -510,7 +542,8 @@ div.partsHeading a {
 }
 
 #LayoutA #Center div.partsHeading {
-  background-image: url(../images/bg_parts_heading_440.png);
+  display: block;
+  background: #ccc;
 }
 
 #LayoutB #Left div.partsHeading {
@@ -526,8 +559,12 @@ div.partsHeading a {
 }
 
 div.partsHeading h3 {
-  display: inline;
-  font-weight: bold;
+  display: inline ;
+  font-weight: bold ;
+/*
+  color: #FFFFFF ;
+*/
+  
 }
 
 div.partsHeading p {
