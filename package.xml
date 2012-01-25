@@ -3,10 +3,10 @@
     http://pear.php.net/dtd/tasks-1.0.xsd
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
- <name>opSkinPNGPlugin</name>
+ <name>opSkinHOUOUPlugin</name>
  <channel>plugins.openpne.jp</channel>
- <summary>FireWorksで編集可能なPNG形式のスキン</summary>
- <description>FireWorksで編集可能なPNG形式のスキン。レイヤー情報やグラデーション情報をPNGファイル自体に保存している。</description>
+ <summary>HOUOUプロジェクトのスキン</summary>
+ <description></description>
  <lead>
   <name>手嶋守</name>
   <user>tejima</user>

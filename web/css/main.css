@@ -308,7 +308,9 @@ pre {
  * Header
  *--------------------------------------------*/
 #Header {
+/*
   background: #092f56 url(../images/bg_header.png) repeat-x scroll 0 0;
+*/
   overflow: hidden;
 }
 
@@ -319,8 +321,9 @@ pre {
 #Header h1 {
   margin: 0;
   width: 100px;
-  height: 80px;
+/*  height: 80px;
   background: transparent url(../images/skin_header_logo.png) no-repeat scroll 0 0;
+*/
   float: left;
 }
 
@@ -386,6 +389,9 @@ pre {
   margin-top: 10px;
 }
 
+#localNav ul{
+  padding-left: 100px;
+}
 #localNav ul {
   background: transparent url(../images/bg_localnav_default.png) repeat-y 0 0;
   color: #FFFFFF;
