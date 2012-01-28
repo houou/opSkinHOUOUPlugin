@@ -1,14 +1,30 @@
 //
 
 $(document).ready(function(){
-  $("#globalNav").hide();
+	
+  $("#Center>a +br").hide();
+  $("#Center>a").appendTo("#Center");
+
+  $("#globalNav").appendTo("#Footer");
+  $("#topBanner").hide();
+  $("#FooterContainer p").hide();
   $("#HeaderContainer h1").hide();
-  $("div.partsHeading").hide();
+  $("#Center div.partsHeading").hide();
 
   $("#localNav").appendTo('#HeaderContainer');
 
   $("#HeaderContainer").prepend('<div class="span2 offset1"><img src="http://houou.github.com/NOTIFY_CENTER.png" style="float: left;"></div>');
-  $("#HeaderContainer").prepend('<div class="span2"><img src="http://placehold.it/120x36" style="float: left;"></div>');
+  $("#HeaderContainer").prepend('<div class="span2"><img src="http://placehold.it/120x38" style="float: left;"></div>');
+
+
+
+  $("#page_community_home .gorgon-box").hide();
+
+
+
+  
+
+
 
 
   $("#LayoutA , #sideBanner").wrapAll('<div class="row">');

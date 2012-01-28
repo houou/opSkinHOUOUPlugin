@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+
+.main-content { width:529px !important;}
+#sideBanner { background: #fff;}
+.comment-list { width: 430px !important;}
+
 body
     {
      margin:0px;          /* ページ全体のmargin */
@@ -258,6 +263,10 @@ pre {
 #FooterContainer {
   margin: 0 auto;
 }
+#ContentsContainer{
+  margin-top: 10px;
+}
+
 #Header{
   text-align:center;
   width: 100%;
@@ -426,7 +435,7 @@ pre {
 #localNav ul {
   color: #FFFFFF;
 }
-
+/*
 #localNav ul.friend {
   background: transparent url(../images/bg_localnav_friend.png) repeat-y 0 0;
 }
@@ -434,6 +443,7 @@ pre {
 #localNav ul.community {
   background: transparent url(../images/bg_localnav_community.png) repeat-y 0 0;
 }
+*/
 
 #localNav li {
   line-height: 30px;
@@ -463,6 +473,7 @@ pre {
   display: inline;
 }
 
+/*
 #localNav ul li a:hover {
   background: transparent url(../images/bg_localnav_default_hover.png) repeat-x scroll 0 0;
 }
@@ -474,6 +485,8 @@ pre {
 #localNav ul.community li a:hover {
   background: transparent url(../images/bg_localnav_community_hover.png) repeat-x scroll 0 0;
 }
+
+*/
 
 /*----------------------------------------------
  * Contents
@@ -542,7 +555,6 @@ div.partsHeading a {
 }
 
 #LayoutA #Center div.partsHeading {
-  display: block;
   background: #ccc;
 }
 
@@ -561,9 +573,7 @@ div.partsHeading a {
 div.partsHeading h3 {
   display: inline ;
   font-weight: bold ;
-/*
   color: #FFFFFF ;
-*/
   
 }
 
